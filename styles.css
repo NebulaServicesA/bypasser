@@ -36,6 +36,20 @@ header {
     font-weight: bold;
 }
 
+.glow-text {
+    text-shadow: 0 0 10px #ffdd57, 0 0 20px #ffdd57, 0 0 30px #ffdd57;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ffdd57, 0 0 20px #ffdd57, 0 0 30px #ffdd57;
+    }
+    to {
+        text-shadow: 0 0 20px #ffdd57, 0 0 40px #ffdd57, 0 0 60px #ffdd57;
+    }
+}
+
 .container {
     background-color: #333;
     border-radius: 16px;
